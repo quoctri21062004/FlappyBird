@@ -20,4 +20,5 @@ public class GameManager : MonoBehaviour
 
         GameCtrl = FindObjectOfType<GameCtrl>();
     }
+
 }

@@ -10,6 +10,7 @@ public class PipeSpawner : MonoBehaviour
     public float minHeight = -1f;
     public float maxHeight = 1f;
 
+  
     private void OnEnable()
     {
         InvokeRepeating(nameof(Spawn),spawnRate,spawnRate);
@@ -20,7 +21,7 @@ public class PipeSpawner : MonoBehaviour
     }
     protected void Spawn()
     {
-        GameObject pipe = Instantiate(prefab,spawnPos.transform.position,Quaternion.identity);
+        GameObject pipe = SimplePool2.Spawn(prefab, spawnPos.transform.position, Quaternion.identity);
         pipe.transform.position += Vector3.up * Random.Range(minHeight, maxHeight);
     }
 }
