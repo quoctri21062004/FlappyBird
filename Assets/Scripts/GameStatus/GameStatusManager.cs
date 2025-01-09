@@ -43,6 +43,9 @@ public class GameStatusManager : MonoBehaviour
     {
         gameOver.SetActive(true);
         playButton.SetActive(true);
+
+        GameManager.instance.GameCtrl.audioManager.GetSoundGameOver();
+
         Pause();
     }
 

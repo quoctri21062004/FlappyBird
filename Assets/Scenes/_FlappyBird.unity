@@ -346,10 +346,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1453216029}
-  audioClip: {fileID: 8300000, guid: af66162561d2eed40ad49268cab318bb, type: 3}
-  audioFly: {fileID: 8300000, guid: a58e438b7cfa445498120af0e6169082, type: 3}
-  audioDie: {fileID: 8300000, guid: a245ee5d75348c84a89ffb7992f1dc82, type: 3}
-  audioGameOver: {fileID: 8300000, guid: 78419f98379502c4dbfb2774bc94e7c1, type: 3}
+  audioFly: {fileID: 8300000, guid: d042fc569d45b4544b44ae43214b2708, type: 3}
+  audioGameOver: {fileID: 8300000, guid: 2da60fbb6c83c894e9b16c12dfc0eeec, type: 3}
+  audioScore: {fileID: 8300000, guid: da5388e1436f6b9499e97b63215ae1ce, type: 3}
 --- !u!1 &230790472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,7 +1445,7 @@ GameObject:
   - component: {fileID: 1453216028}
   - component: {fileID: 1453216029}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: AudioPlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1479,7 +1478,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.22
   m_Pitch: 1
   Loop: 0
   Mute: 0
